@@ -61,7 +61,7 @@ export default function App() {
         renderItem={({ item }) => (
           <View style={styles.row}>
             <Text>{item.content}</Text>
-            <Text>${item.value.toFixed(2)}</Text>
+            <Text>₪{item.value.toFixed(2)}</Text>
             <Text>{item.tags.join(', ')}</Text>
             <Button title="Remove" onPress={() => handleRemoveRow(item.id)} />
           </View>
