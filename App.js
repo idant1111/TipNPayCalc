@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button, FlatList } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
 import SplitDisplay from './SplitDisplay';
 
 export default function App() {
@@ -38,6 +39,20 @@ export default function App() {
       />
       <Text>Tags:</Text>
       <TextInput style={styles.input} value={tags} onChangeText={setTags} />
+
+      <Text>Tip Percentage:</Text>
+      <Picker
+        selectedValue={tipPercentage}
+        style={styles.picker}
+        onValueChange={(itemValue) => setTipPercentage(itemValue)}
+      >
+        <Picker.Item label="0%" value={0} />
+        <Picker.Item label="5%" value={5} />
+        <Picker.Item label="10%" value={10} />
+        <Picker.Item label="15%" value={15} />
+        <Picker.Item label="20%" value={20} />
+        <Picker.Item label="30%" value={30} />
+      </Picker>
 
       <Button title="Add Row" onPress={handleAddRow} />
 
@@ -79,5 +94,11 @@ const styles = StyleSheet.create({
     padding: 5,
     borderColor: '#ccc',
     borderWidth: 1,
+  },
+  picker: {
+    height: 40,
+    marginBottom: 10,
+    borderWidth: 1,
+    borderColor: 'gray',
   },
 });
