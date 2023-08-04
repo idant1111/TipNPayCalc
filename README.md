@@ -1,7 +1,5 @@
 # TipNPayCalc
 react native application for Tab payment and tip calculation
 
-
-
-<img width="371" alt="image" src="https://github.com/idant1111/TipNPayCalc/assets/3217869/6e9eecf7-ab20-4495-a804-8d068439ace0">
+<img width="361" alt="image" src="https://github.com/idant1111/TipNPayCalc/assets/3217869/032df598-a61f-4115-b573-96ffe878075f">
 
